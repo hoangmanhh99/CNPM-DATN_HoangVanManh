@@ -1,0 +1,44 @@
+\documentclass[../DoAn.tex]{subfiles}
+\begin{document}
+\section{Kết luận}
+
+Trong suốt quá trình thực hiện ĐATN, để hướng đến một sản phẩm tốt, em đã luôn trau dồi kiến thức, kinh nghiệm và kiên trì tìm hiểu những vấn đề mình chưa giải quyết được. Với ĐATN lần này, em đã hoàn thành được các việc:
+\begin{itemize}
+    \item Xây dựng được ứng dụng đa nền tảng có thể chạy được trên Android, iOS và Web, ứng dụng có giao diện trực quan, dễ sử dụng, trải nghiệm người dùng tốt, hình ảnh đẹp.
+    \item Xây dựng được một server và đã đẩy lên nền tảng Heroku cho phép tạo domain miễn phí. Server chịu trách nhiệm xử lý dữ liệu từ phía ứng dụng và xe Arduino.
+    \item Nghiên cứu, xây dựng được chiếc xe Arduino 2 bánh và 1 bánh điều hướng, bên cạnh đó có lắp thêm đèn LED nhiều màu và cảm biến siêu âm để đo khoảng cách vật cản.
+    \item Sử dụng Socket.IO để truyền tín hiệu từ ứng dụng, server nhận được dữ liệu, xe Arduino phát hiện tín hiệu và thực hiện các chức năng theo yêu cầu. Socket.IO đem lại tốc độ xử lý nhanh, người dùng chỉ cần thao tác trong vòng 1 giây xe đã phản hồi lại thông tin.
+\end{itemize}
+
+Qua quá trình nghiên cứu đề tài, em thấy đề tài điều khiển xe Arduino bằng ứng dụng đa nền tảng Flutter có khả năng ứng dụng vào thực tiễn cao, đáp ứng được những yêu cầu cuộc sống ngày nay. Việc sử dụng Flutter vừa có thể đem lại trải nghiệm tốt, vừa chạy được nhiều nền tảng lại vừa tiết kiệm chi phí phát triển, do đó có thể áp dụng vào các doanh nghiệp vừa và nhỏ để phát triển ứng dụng. Đề tài có thể được ứng dụng trong việc điều khiển các thiết bị trong lĩnh vực vận tải, logistic, điều khiển các thiết bị không người lái. Bên cạnh đó có thể áp dụng những kiến thức đó để ứng dụng vào các ngành sử dụng cảm biến như dự báo thời tiết, nhiệt độ, chăm sóc sức khoẻ, ...
+
+Bên cạnh đó, em còn có một số việc chưa làm được:
+\begin{itemize}
+    \item Phát hiện các thiết bị kết nối riêng biệt nếu nhiều thiết bị kết nối cùng lúc với server.
+    \item Xe Arduino còn chưa chạy thẳng từ 95 - 100\%.
+    \item Chưa thể thử nghiệm được nếu nhiều người dùng sử dụng sẽ có độ trễ bao nhiêu và khắc phục những vấn đề đó.
+\end{itemize}
+
+Đóng góp nổi bật của em đó là đã xây dựng được hệ thống sử dụng ứng dụng đa nền tảng để điều khiển xe Arduino với độ phản hồi nhanh, tức thì, xe chạy các hướng tốt. Đồng thời xe có sử dụng cảm biến siêu âm để đo khoảng cách nhằm phát hiện vật cản khi di chuyển và báo hiệu bằng đèn LED. 
+
+Qua ĐATN lần này, em đã rút ra được nhiều kinh nghiệm thực tiễn như: những kiến thức về Arduino không thuộc phạm vi kiến thức trong ngành học của em thì cần tìm hiểu, liên lạc với những người trong ngành đó, nhờ họ giúp đỡ vì họ có những kiến thức mà không dễ dàng tìm được ở trên Internet; ngoài ra, trong quá trình hoàn thành ĐATN cần vạch ra thời gian biểu rõ ràng, có thời gian làm, thời gian dự phòng để chất lượng ĐATN tốt nhất. Đây cũng chính là những kinh nghiệm quan trọng để em có thể quản trị và phát triển tốt công việc của bản thân sau này.
+
+\section{Hướng phát triển}
+
+Trong ĐATN, em đã thực hiện các công việc sau đây để hoàn thiện các chức năng đã làm:
+\begin{itemize}
+    \item Lựa chọn framework Flutter để xây dựng ứng dụng đa nền tảng, giao diện đẹp, trải nghiệm người dùng tốt.
+    \item Sử dụng Socket.IO để quá trình giao tiếp giữa các thành phần được tức thời, độ trễ thấp, tăng trải nghiệm người dùng.
+    \item Nghiên cứu các thiết bị để lắp xe Arduino, tìm hiểu các thông số kỹ thuật và cách lắp đặt. Xe có lắp thêm cảm biến.
+\end{itemize}
+
+Với những chức năng/nhiệm vụ em đã làm, em sẽ phân tích hướng đi mới cũng như nâng cấp để hoàn thiện sản phẩm của mình hơn:
+
+\begin{itemize}
+    \item Trước tiên, thiết bị là quan trọng nhất, vì vậy em ưu tiên về xe Arduino. Em sẽ đầu tư lắp thêm các cảm biến như , thời tiết, ánh sáng,... để thử nghiệm với những bài toán thực tế hơn như dùng nó để dự đoán thời tiết và chọn giờ để di chuyển, di chuyển vào những nơi có nhiệt độ tốt.
+    \item Thứ 2, em sẽ truyền thông tin thiết bị kết nối về server và lưu trữ vào cơ sở dữ liệu, khi đó nhiều thiết bị kết nối sẽ được tổ chức tốt hơn.
+    \item Thứ 3, việc xe có nhiều cảm biến hơn thì xe sẽ có nhiều chức năng hơn, ứng dụng sẽ được thiết kế nhiều màn để chuyên phụ trách từng chức năng và điều khiển nó.
+    \item Thứ 4, server cũng là một thành phần vô cùng quan trọng. Server nên được đẩy lên một máy chủ tốt để các thiết bị kết nối liên tục, tốc độ xử lý của server càng nhanh hơn và hệ thống sẽ hoạt động tốt hơn.
+\end{itemize}
+
+\end{document}
